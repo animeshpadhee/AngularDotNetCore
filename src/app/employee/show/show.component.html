@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Gender</th>
+            <th>Salary</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let x of EmployeeList">
+        <td>{{x.Id}}</td>
+        <td>{{x.Name}}</td>
+        <td>{{x.GenderId==1?"Male":"Female"}}</td>
+        <td>{{x.Salary}}</td>
+        <td>{{x.City}}</td>
+    </tr>
+    <!-- <tr>
+        <td>{{EmployeeList[1].ID}}</td>
+        <td>{{EmployeeList[1].Name}}</td>
+        <td>{{EmployeeList[1].GenderId==1?"Male":"Female"}}</td>
+        <td>{{EmployeeList[1].Salary}}</td>
+        <td>{{EmployeeList[1].City}}</td>
+    </tr> -->
+    </tbody>
+</table>
